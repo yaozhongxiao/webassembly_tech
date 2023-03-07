@@ -1,0 +1,23 @@
+{
+  "options": {
+    "runtime": "stub",
+    "use": "Math=JSMath",
+    "importMemory": true,
+    "sourceMap": true,
+    "measure": true
+  },
+  "targets": {
+    "debug": {
+      "outFile": "build/Mandelbrot-debug.wasm",
+      "textFile": "build/Mandelbrot-debug.wat",
+      "debug": true
+    },
+    "release": {
+      "outFile": "build/Mandelbrot.wasm",
+      "textFile": "build/Mandelbrot.wat",
+      "optimizeLevel": 3,
+      "shrinkLevel": 0,
+      "noAssert": true
+    }
+  }
+}

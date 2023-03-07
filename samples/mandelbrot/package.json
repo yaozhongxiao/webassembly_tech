@@ -1,0 +1,15 @@
+{
+  "name": "@assemblyscript/mandelbrot-example",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "asbuild:debug": "asc assembly/Mandelbrot.ts --target debug",
+    "asbuild:release": "asc assembly/Mandelbrot.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "start": "npx serve"
+  },
+  "devDependencies": {
+    "assemblyscript": "latest"
+  }
+}
